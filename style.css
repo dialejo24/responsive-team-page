@@ -1,0 +1,125 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin:0;
+    padding:0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    display: block;
+  }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width:90%;
+    display:grid;
+    gap:4em;
+    max-width:950px;
+    margin-block: 4em;
+}
+
+
+.header{
+    display: grid;
+    gap:1.2em;
+}
+.title{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+.team_description h2{
+    font-size: 1.12rem;
+    text-transform: uppercase;
+}
+.team_description p{
+    margin-top: 0.62em;
+    font-size: 0.87rem;
+}
+
+
+.team_members{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.member{
+    max-width:280px;
+    width:45%;
+    min-height: 280px;
+}
+.saba,
+.lu,
+.stan{
+    display:grid;
+    align-content: flex-end;
+}
+.member_attrs{
+    display: flex;
+}
+.profession{
+    writing-mode: vertical-lr;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+    font-size: .62rem;
+    line-height: 2;
+}
+.name{
+    font-size: 0.87rem;
+    font-weight: 600;
+}
+@media(min-width:450px){
+    .member{
+        min-height:400px;
+    }
+}
+@media(min-width:660px){
+    .member{
+        min-height: 550px;
+    }
+    
+    .team_description p{
+        font-size: 1.12rem;
+    }
+    .profession{
+        font-size: 0.75rem;
+        line-height: 3;
+    }
+    .name{
+        font-size: 1.12rem;
+    }
+}
+@media(min-width:934px){
+    .lu,
+    .stan{
+        align-content: flex-start;
+    }
+    .griff{
+        display: grid;
+        align-content: flex-end;
+    }
+    .header{
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
