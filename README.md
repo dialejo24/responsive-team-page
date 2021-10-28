@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://dialejo24.github.io/responsive-team-page/">
       Solution
     </a>
     <span> | </span>
